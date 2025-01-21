@@ -6,3 +6,5 @@ node_modules
 .yarn/install-state.gz
 .DS_Store
 .idea
+# ignore ----- files
+*-----*
