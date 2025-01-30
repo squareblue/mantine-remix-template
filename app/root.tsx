@@ -1,3 +1,4 @@
+import React from 'react';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 
