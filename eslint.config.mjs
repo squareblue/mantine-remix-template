@@ -43,9 +43,11 @@ export default [
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-  )).map(config => (
-    { ...config, files: ['**/*.{js,jsx,ts,tsx}'] }
-  )),
+  )).map(config => ({
+      ...config,
+      files: ['**/*.{js,jsx,ts,tsx}']
+    })
+  ),
 
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
@@ -72,9 +74,11 @@ export default [
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-  )).map(config => (
-    { ...config, files: ['**/*.{ts,tsx}'] }
-  )),
+  )).map(config => ({
+      ...config,
+      files: ['**/*.{ts,tsx}']
+    })
+  ),
 
   {
     files: ['**/*.{ts,tsx}'],
