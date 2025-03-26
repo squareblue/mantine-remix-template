@@ -1,10 +1,12 @@
+@use "sass-rem" as rem-units;
+
 .title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(100px);
+  font-size: rem-units.convert(100px);
   font-weight: 900;
-  letter-spacing: rem(-2px);
+  letter-spacing: rem-units.convert(-2px);
 
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+  @media (max-width: var(--mantine-breakpoint-md)) {
+    font-size: rem-units.convert(50px);
   }
 }

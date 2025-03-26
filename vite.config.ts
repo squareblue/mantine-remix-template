@@ -9,5 +9,13 @@ export default defineConfig({
   plugins: [
     remix(),
     tsconfigPaths()
-  ]
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+        // additionalData: `@use "${path.join(process.cwd(), 'app/_mantine').replace(/\\/g, '/')}" as mantine;`
+      }
+    }
+  }
 });
